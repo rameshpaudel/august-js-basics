@@ -9,6 +9,7 @@
 <body>
 
     <script>
+        var emptyFunc = null;
         var person1 = {
             "name": "John",
             "lastName": "Doe",
@@ -49,6 +50,20 @@
        function testThis(){
            console.log("testin testing")
            return "Hello World"
+       }
+
+
+       function runIfFunction(){
+        //Checking if the variable is function
+        if(typeof emptyFunc === "function"){
+            //Note:: `==` doesn't check for the data type ie. "1" == 1 returns true
+            // `===` checks the data type, i.e. "1" === 1 returns false
+            //Running if its a function
+            emptyFunc();
+        } else{
+            //If not just show the value
+            console.log("Empty function is not a function", emptyFunc);
+        }
        }
     
     </script>
