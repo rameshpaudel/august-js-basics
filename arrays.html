@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+</head>
+<body>
+
+    <script>
+        
+        var person1 = {
+            name: "John",
+            lastName: "Doe",
+            occupation: "Lawyer",
+          
+        }
+        
+        
+        var person2 = {
+            name: "Jane",
+            lastName: "Doe",
+            occupation: "Doctor",
+            
+        }
+
+        //We count the indexes from 0
+        var array = [ 1,2,3,4,5,6,7,8,95,140]
+
+        //We can access the specific values by their index
+        console.log('The second item in the array is', array[1])
+
+        var personList = [
+            person1, person2,
+            null
+        ]
+
+
+        //
+        for(var i = 0; i < array.length; i++){
+            console.log("the index is " + i, "With the value of" ,array[i])
+        }
+
+
+
+        for(var i = 0; i < personList.length; i++){
+            var currentItem = personList[i];
+            if(currentItem && currentItem.name && currentItem.lastName){
+                console.log("Hello ", currentItem.name + " " + currentItem.lastName)
+            } else{
+                console.log("The name and lastName key doesn't exist")
+            }
+        }
+
+/* 
+        var multiArray = [
+        1,2,3,
+        [4,5,6],
+        7,8,9
+
+        ]
+
+ */
+        
+      
+    </script>
+    
+</body>
+</html>
