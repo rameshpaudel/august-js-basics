@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objects</title>
+</head>
+<body>
+
+    <script>
+        var person1 = {
+            "name": "John",
+            "lastName": "Doe",
+            "age" : 25,
+            occupation: "Lawyer",
+            fullName: function(){
+               return person1.name + ' ' + person1.lastName
+            }
+        }
+        
+        
+        var person2 = {
+            name: "Jane",
+            lastName: "Doe",
+            dob: {
+                year: 1990,
+                month: 9,
+                date: 10
+            },
+            occupation: "Doctor",
+            fullName: function(){
+               return person2.name + ' ' + person2.lastName
+            },
+            age:function(){
+                var currentTime = new Date();
+                var yearNow = currentTime.getFullYear();
+                return yearNow - person2.dob.year;
+            }
+        }
+
+        var firstPerson = "John Doe, 25, Lawyer"
+
+        console.log("The name of the person is ", person1.fullName() , 'The age is ',person1.age )
+       
+
+       //Functions overview
+
+       function testThis(){
+           console.log("testin testing")
+           return "Hello World"
+       }
+    
+    </script>
+    
+</body>
+</html>
