@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS 101</title>
+</head>
+<body>
+
+    <script>
+        var test = "Some string"
+        var anotherString = 'Single quotation can also hold string'
+
+        test = 10;
+        
+        var testData; //Undefined variable
+
+        var nullData = null; //typeof shows 'object'
+        
+        var someNumber = 10;
+        var anotherNumber = 20;
+
+        var firstString = "Hello";
+        var secondString = "World";
+
+        var sum  = someNumber + anotherNumber;
+        //Arithmetic Operations
+        console.log("Addition" ,sum);
+        console.log("Substract" ,someNumber - anotherNumber);
+        console.log("Division" , someNumber / anotherNumber);
+        console.log("Remainder" ,someNumber % anotherNumber);
+
+        console.log("Concatinating the strings" , firstString + " " + secondString);
+
+        //Console error messages
+        console.warn("This will show up a warning in the console")
+        console.error("This will show up as error in the console")
+        console.debug("Debug message")
+
+
+        console.log("The length of characters is ", firstString.length, secondString.length)
+
+        //Getting the data type of any variable
+
+        console.log('firstString', typeof firstString)
+        console.log('test', typeof test)
+        console.log('testData', typeof testData)
+        console.log('nullData', typeof nullData) // 
+
+
+
+    </script>
+    
+</body>
+</html>
