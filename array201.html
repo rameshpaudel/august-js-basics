@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+     var array = [3,4,25,32,5,6,15,19,20];
+
+    var filteredData = array.filter(function(value,index){
+        if( value % 2 == 0){
+            return true;
+        }
+    })
+    
+    //Multiplying each values by 2
+    var mappedData = array.map(function(value,index){
+        return value * 2;
+    })
+    //Transforming the value into object
+    var convertingData = array.map(function(value,index){
+        return {value: value, doubles: value * 2};
+    })
+    </script>
+</body>
+</html>
