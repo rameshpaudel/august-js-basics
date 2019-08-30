@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comparing Numbers</title>
+</head>
+<body>
+    <script>
+        //Get the value from the user which will be string
+        var fNumber = prompt("Enter first number")    
+        var sNumber = prompt("Enter second number")    
+        var tNumber = prompt("Enter third number") 
+        
+        //Converting all the inputs to integer
+        var parsedFNum = parseInt(fNumber)
+        var parsedSNum = parseInt(sNumber)
+        var parsedTNum = parseInt(tNumber)
+
+        //Check if all the items are indeed numbers
+        if(!isNaN(parsedFNum) && !isNaN(parsedSNum) && !isNaN(parsedTNum)){
+            //Initialize a variable for storing the greatest number of all
+            var greater;
+            //Check the first two numbers and find the greater one
+            if(parsedFNum > parsedSNum){
+                greater = parsedFNum
+            } else{
+                greater = parsedSNum
+            }
+
+            if(greater < parsedTNum){
+                greater = parsedTNum
+            }
+
+            alert("The largest number is "+ greater)
+
+        } else{
+            //Check if first number is not a number
+            if(isNaN(parsedFNum)){
+                alert("The first input is not a number")
+            }
+            
+            //Check if second number is not a number
+            if(isNaN(parsedSNum)){
+                alert("The second input is not a number")
+            }
+            
+            //Check if third number is not a number
+            if(isNaN(parsedTNum)){
+                alert("The third input is not a number")
+            }
+        }
+
+
+
+        
+    </script>
+</body>
+</html>
