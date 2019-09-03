@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filtering arrays</title>
+</head>
+
+<body>
+    <script>
+        var cities = ["Kathmandu", "Bhaktapur", "Lalitpur", "Nepalgunj", "Pokhara", "Dharan", "Itahari"];
+
+        var filteredData = cities.filter(function (value, index) {
+            if (value.length > 8) {
+                return true;
+            }
+        })
+
+
+        var products = [
+            {
+                name: "bag",
+                price: 200
+            },
+            {
+                name: "shoe",
+                price: 200
+            },
+            {
+                name: "shirt",
+                price: 1200
+            },
+            {
+                name: "pant",
+                price: 1600
+            }
+        ]
+
+
+        var countries = [
+            "China",
+            "India",
+            "Nepal",
+            "SriLanka",
+            "Pakistan",
+            "Afganstan"
+        ]
+        var capitals = [
+            "Bejing",
+            "New Delhi",
+            "Kathmandu",
+            "Colombo",
+            "Islamabad",
+            "Somewhere"
+        ]
+
+        // map
+        // ["China - Bejing", "India -New Delhi"]
+
+    </script>
+</body>
+
+</html>
