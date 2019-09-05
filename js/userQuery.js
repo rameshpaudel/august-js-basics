@@ -21,5 +21,3 @@ if (!isNaN(parsedFNum) || !isNaN(parsedSNum)) {
     alert("Sorry your input doesn't seem to be a number")
 }
 //If its numeric return the sum
-
-
