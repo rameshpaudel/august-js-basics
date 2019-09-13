@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product List</title>
+</head>
+<body>
+    <script>
+    
+        function createProduct(name, brand, price){
+            return {
+                name, brand, price
+            }
+        }
+
+
+        var fProduct = createProduct("Bag", "Nike", 2000)
+        var sProduct = createProduct("Shoes", "Nike", 3500)
+        var tProduct = createProduct("Cap", "GUCCI", 300)
+        var fourthProduct = createProduct("Jacket", "North Face", 5000)
+        var fifthProduct = createProduct("Headband", "GUCCI", 5010)
+
+        var allProduct = [ fProduct, sProduct, tProduct, fourthProduct, fifthProduct]
+
+        var maxPrice;
+        var minPrice;
+
+        for(var i=0; i < allProduct.length; i++){
+            var price = allProduct[i].price
+            if(i ==0) {
+                maxPrice = price
+                minPrice = price
+            } else {
+
+                if(maxPrice < price){
+                    maxPrice = price
+                }
+
+                if(minPrice > price){
+                    minPrice = price
+                }
+            }
+
+
+
+        }
+    </script>
+</body>
+</html>
