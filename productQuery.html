@@ -24,28 +24,52 @@
 
         var allProduct = [ fProduct, sProduct, tProduct, fourthProduct, fifthProduct]
 
-        var maxPrice;
-        var minPrice;
+        // var maxPrice;
+        // var minPrice;
 
-        for(var i=0; i < allProduct.length; i++){
-            var price = allProduct[i].price
-            if(i ==0) {
-                maxPrice = price
-                minPrice = price
-            } else {
+        // for(var i=0; i < allProduct.length; i++){
+        //     var price = allProduct[i].price
+        //     if(i ==0) {
+        //         maxPrice = price
+        //         minPrice = price
+        //     } else {
 
-                if(maxPrice < price){
-                    maxPrice = price
-                }
+        //         if(maxPrice < price){
+        //             maxPrice = price
+        //         }
 
-                if(minPrice > price){
-                    minPrice = price
-                }
-            }
+        //         if(minPrice > price){
+        //             minPrice = price
+        //         }
+        //     }
+        // }
+            var arr = [ 1,2,3,43,4,5,6,7,87,8,9,10]
+
+            //To remove specific item from an array
+            //We want to remove first 4 items
+
+            arr.splice(0,4)
+
+
+            var jString = arr.join("======")
 
 
 
-        }
+            var myString = "test, this, out, somevalues, are , being, placed here"
+            var characters = "abcdefghijklmnopqrstuvwxyz"
+            var convToArr = myString.split(",")
+
+
+            //Task :
+
+            // Add curse words to an array
+
+            //Ask the user for feedback
+
+            //Filter out the curse words from the user input
+
+            //Output filtered Datas without the curse word
+
     </script>
 </body>
 </html>
