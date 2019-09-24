@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curse word filtering</title>
+</head>
+
+<body>
+
+    <script>
+        var curseWord = [
+            "test",
+            "hello"
+        ]
+
+        var userQuery = prompt("Enter something");
+        var userWordList = userQuery.split(" ");
+
+        function filterUserInput(userInputData, item) {
+            var cursePosition = [];
+            //Filtering the curse word position from the user input
+            for (var i = 0; i < item.length; i++) {
+                let curseIndex = userInputData.indexOf(item[i]);
+                if (curseIndex !== -1) {
+                    cursePosition.push(curseIndex)
+                }
+            }
+
+            return cursePosition;
+        }
+
+
+        //Output final Result
+        function sanitizeInput(inputData, cursePosition){
+            for (var i = 0; i < cursePosition.length; i++) {
+                let cursedPos = cursePosition[i];
+                inputData[cursedPos] = "*#%$#"
+            }
+            return inputData;
+        }
+
+
+        var filteredData = filterUserInput(userWordList, curseWord)
+        console.log("Filter data", filteredData)
+        var sanitizedData = sanitizeInput(userWordList, filteredData)
+
+        
+
+        console.log("The final output is ", sanitizedData.join(" "))
+
+
+    </script>
+</body>
+
+</html>
