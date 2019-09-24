@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>DOM - Document Object Model</title>
+    </head>
+    <body>
+        <h1>Test Page</h1>
+
+        <h1 id="hello">Hello World</h1>
+        <div class="container">
+            <h3>Test this page</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ad repudiandae qui harum nostrum nisi minima, iste nesciunt fugiat dolore.</p>
+        </div>
+        <div class="container">
+            <h3>Children of the container</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ad repudiandae qui harum nostrum nisi minima, iste nesciunt fugiat dolore.</p>
+        </div>
+        <script>
+            //Query Selector selects the first item that it finds on the page
+            //querySelectors gets the input same as css style
+            var heading = document.querySelector("h1")
+
+            //QuerySelectorAll selects all the tags/elements that matches in the page
+            var allHeadings  = document.querySelectorAll("h1");
+            //==========================================================
+
+            //get the elements based on id
+
+            var myHeading = document.getElementById("hello")
+
+
+            //get elements by class name
+
+            var myContainer = document.getElementsByClassName('container')
+
+            //==========================================================
+
+
+            //To change the style on selected element
+            heading.style = "background-color:red; color: white"
+
+            allHeadings[1].style = "color:green"
+
+
+            //To change the stylesheet on second container
+            myContainer[1].style = "background-color: green; color: white; padding: 10px"
+        </script>
+    </body>
+</html>
